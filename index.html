@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Preview</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:ital,wght@0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="c-product__card">
+      <div>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/image-product-desktop.jpg"
+            class="product__image__desktop"
+          />
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="Chanel Perfume"
+            width="686"
+            height="480"
+            class="product__image__mobile"
+          />
+        </picture>
+      </div>
+      <div class="product__card__info">
+        <hgroup>
+          <p class="product__card__info-name opacity">Perfume</p>
+          <h1 class="product__card__info-title">
+            Gabrielle Essence <span class="nowrap">Eau De Perfum</span>
+          </h1>
+        </hgroup>
+        <p class="product__card__info__details opacity">
+          A floral, solar and voluptous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="product__card-price">
+          <h2 class="product__card-price__new_price">
+            <span class="offscreen">New Price: </span>$149.99
+          </h2>
+          <del class="product__card-price__old_price"
+            ><span class="offscreen opacity">Old Price: </span>$169.99</del
+          >
+        </div>
+        <button type="button" class="product__price__cart btn">
+          <img src="images/icon-cart.svg" alt="" />Add to Cart
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
